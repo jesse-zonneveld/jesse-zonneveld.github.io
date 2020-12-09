@@ -1,0 +1,146 @@
+.paper {
+    padding: 20px 80px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.3);
+
+    &--about {
+        z-index: 14;
+    }
+
+    &--projects {
+        z-index: 9;
+        padding: 20px 40px;
+    }
+
+    &--contact {
+        z-index: 4;
+    }
+
+    .bottom-of-paper,
+    .top-of-paper {
+        height: 1px;
+    }
+}
+
+.shift {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1000ms ease-in-out, height 100ms;
+}
+
+.email {
+    color: black;
+}
+
+.resume {
+    position: relative;
+    color: black;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 160%;
+        width: 105%;
+        background-color: #f4a259;
+        z-index: -5;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 170%;
+        width: 110%;
+        background-color: rgb(255, 255, 255);
+        z-index: -4;
+        transition: all 0.5s;
+    }
+
+    &:hover:after {
+        transform: translate(50%, -50%);
+    }
+}
+
+.project-sections {
+    display: flex;
+    justify-content: center;
+
+    .project-sections__wordpress,
+    .project-sections__personal,
+    .project-sections__mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px;
+        align-items: center;
+        flex: 1 1 300px;
+    }
+
+    .project-sections__wordpress,
+    .project-sections__mobile {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .skills,
+    .tools,
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+}
+
+i {
+    font-size: 100px;
+    padding-bottom: 50px;
+}
+
+.projects-list a {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 99%;
+        width: 150%;
+        background-color: #f4a259;
+        z-index: -5;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 155%;
+        background-color: rgb(255, 255, 255);
+        z-index: -4;
+        transition: all 0.5s;
+    }
+
+    &:hover:after {
+        transform: translateX(50%) scaleX(0.1);
+    }
+}
+
+.mobile-only {
+    display: none;
+}

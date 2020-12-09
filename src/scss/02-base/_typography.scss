@@ -1,0 +1,105 @@
+@use 'variables';
+
+* {
+    color: inherit;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: $main-font;
+    color: $font-color-grey;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.caption {
+    color: $font-color-dark;
+}
+
+.hey-name {
+    font-family: $secondary-font;
+    color: #5b8e7d;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.typing-gif-pretext {
+    font-family: $main-font;
+    color: $font-color-dark;
+    font-size: 2.9rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.folder-title {
+    // font-family: $secondary-font;
+    font-size: 1.8rem;
+    color: $font-color-dark;
+    font-weight: 300;
+}
+
+.headline {
+    font-family: $secondary-font;
+    color: $font-color-dark;
+
+    &--main {
+        font-weight: 300;
+        font-size: 3rem;
+        margin: 0 0 40px 0;
+        line-height: 4rem;
+    }
+
+    &--xlarge {
+        font-weight: 400;
+        font-size: 5rem;
+        margin: 30px 0;
+        line-height: 2rem;
+    }
+
+    &--large {
+        font-weight: 500;
+        font-size: 3rem;
+        margin: 40px 0;
+        line-height: 4rem;
+    }
+
+    &--medium {
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+
+    &--small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $font-color-dark;
+        text-transform: uppercase;
+    }
+
+    &--white {
+        color: $font-color-light;
+    }
+
+    &--no-margin {
+        margin: 0;
+    }
+}
+
+.logo-text,
+.logo-intro {
+    font-family: $secondary-font;
+    font-weight: 200;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    font-size: 2rem;
+
+    &:hover {
+        color: $font-color-dark;
+    }
+}

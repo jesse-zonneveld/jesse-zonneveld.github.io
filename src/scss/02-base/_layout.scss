@@ -1,0 +1,25 @@
+@use 'variables';
+
+.l-container-1080 {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    &--white {
+        background-color: white;
+    }
+}
+
+.l-container-full-screen {
+    position: relative;
+    width: 100%;
+
+    &--dark {
+        background: $light-grey;
+    }
+}
+
+body {
+    position: relative;
+    background-color: $light-grey;
+}
