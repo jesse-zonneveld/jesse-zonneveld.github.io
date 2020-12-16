@@ -62,6 +62,7 @@
     height: 200px;
     overflow: hidden;
     border: 7px solid white;
+    transform: rotate(180deg);
 
     img {
         width: 100%;
@@ -71,9 +72,9 @@
     }
 }
 
-.profile-image-holder:not(:root:root) {
-    transform: rotate(180deg) !important;
-}
+// .profile-image-holder:not(:root:root) {
+//     transform: rotate(180deg) !important;
+// }
 
 .typing-gif-container {
     display: flex;
